@@ -45,12 +45,13 @@ function App() {
       />
       <h2>Welcome {username}</h2>
       <form className="app__form">
-        <FormControl className="app__form">
+        <FormControl className="app__formControl">
           <Input
             value={input}
             type="text"
             placeholder="Enter message.."
             onChange={(event) => setInput(event.target.value)}
+            className="app__input"
           />
 
           <IconButton
@@ -58,6 +59,7 @@ function App() {
             variant="contained"
             type="submit"
             onClick={sendMessage}
+            className="app__iconBtn"
           >
             <SendIcon />
           </IconButton>
